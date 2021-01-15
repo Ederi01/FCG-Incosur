@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+body {
+   font-family: "Helvetica";
+}
+
+nav a {
+	font-size:3vh;
+   color: #486070 !important;
+	justify-content:space-around;
+}
+nav a:hover{
+   color: #19193A !important;
+   font-family:"Helvetica";
+}
+
+.titulo {
+   font-size: 52px;
+}
+
+.subtitulo {
+   font-size: 20px;
+}
+
+@media(max-width: 1200px) {
+   .titulo {
+      font-size: 40px;
+   }
+}
+
+@media(max-width: 768px) {
+   .titulo {
+      font-size: 32px;
+   }
+}
+
+@media(max-width: 575px) {
+   .titulo {
+      font-size: 24px;
+   }
+}
+
+p {
+   color: #486070;
+   font-size: 18px;
+}
+
+.texto-base {
+   font-size: 18px;
+}
+
+.texto-sm {
+   font-size: 16px;
+}
+
+.color-base {
+   color: #486070;
+}
+
+.seccion {
+   padding: 80px 0px;
+}
+
+@media(max-width: 768px) {
+   .seccion {
+      padding: 40px 0px;
+   }
+}
+
+.bold {
+   font-weight: 600;
+}
+
+/* //////// BLOQUE ABOUT //////// */
+#about  {
+   background: url("../img/4.jpg") no-repeat;
+   background-position: 100% -100px;
+   background-size: cover;
+   margin-top: 90px;
+   color: #fff;
+}
+
+@media(max-width: 768px) {
+   #about {
+      background-position: 100% 100%;
+   }
+}
+
+#about .lista {
+   /*list-style: none;*/
+   font-size: 18px;
+   padding-left: 15px;
+   margin: 0px;
+}
+
+#about .lista li {
+   margin-bottom: 10px; 
+}
+
+#about .lista li:last-child {
+   margin-bottom: 0px; 
+}
+
+/* //////// BLOQUE ÁREAS //////// */
+.powerpoint{
+  text-decoration: none !important;
+  font-weight: bold;
+  color:#486070 !important;
+}
+
+.powerpoint:hover{
+  color:#19193A !important;
+}
+
+/* //////// BLOQUE POLÍTICAS //////// */
+#politicas {
+   background: url(../img/6.jpg) no-repeat center;
+   background-size: cover;
+}
+
+#politicas .tarjeta-oscura {
+   height: 100%;
+}
+
+.tarjeta-oscura {
+   width: 100%;
+   height: auto;
+   padding: 30px;
+   background: rgba(0,0,0,.65);
+}
+
+.card-text{
+   color: #486070;
+}
+.bloque{
+    background-color: black;
+	opacity: 0.5;
+	padding-bottom:5vh;
+	padding-top:4vh;
+}
+
+/* //////// BLOQUE VALORES //////// */
+#valores .img-valores {
+   max-width: 100%;
+   height: 240px;
+   object-fit: cover;
+   display: block;
+   margin: 0 auto;
+}
+
+@media(max-width: 992px) {
+   #valores .img-valores {
+      max-width: 360px;
+      height: 240px;
+   }
+}
+
+@media(max-width: 575px) {
+   #valores .img-valores {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+   }
+}
+
+/* //////// BLOQUE CONTACTO //////// */
+#contacto {
+   background-color:#486070;
+}
+
+/* //////// BLOQUE UBICACION //////// */
+#ubicacion {
+   background: #486070;
+}
+
+.mapa iframe {
+   width: 100%;
+   height: 400px;
+}
+
+/* //////// BLOQUE CONTACTO //////// */
+.contact-form  .form-control {
+   margin-bottom: 20px;
+}
+
+.send{
+   background: #19193A;
+   color:white;
+   border:none;
+   outline:none;	
+   font-size:20px;
+/*   width:12vh;
+   height:6vh;*/
+   padding: 10px 20px;
+   border-radius: 5px;
+}
+
+.mensaje-confirmacion {
+   text-align: center;
+}
+
+/* ////// MENÚ DE NAVEGACIÓN ///// */
+.menu {
+  width: 100%;
+  min-height: 60px;
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  padding-bottom: 10px;
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu .logo img {
+  height: 80px;
+  width: auto;
+}
+
+.menu .opciones {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  width: calc(100% - 80px);
+  justify-content: space-between;
+}
+
+.menu .opciones li {
+  margin-left: 20px;
+}
+
+.menu .opciones li a {
+  text-decoration: none;
+  color: #486070;
+}
+
+.menu .opciones li a:hover {
+  color: #19193A;
+}
+
+@media(max-width: 992px) {
+   .menu .container {
+      flex-direction: column;
+   }
+
+   .logo-btn-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+   }
+}
+
+.opciones-sm {
+   width: 100%;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+}
+
+.opciones-sm li {
+   padding: 10px 0px;
+}
+
+.opciones-sm li a {
+  text-decoration: none;
+  color: #486070;
+}
